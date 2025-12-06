@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "tsx watch api/index.ts",
     "build": "tsc",
-    "start": "node dist/api/index.js",
+    "start": "npm run build && node dist/api/index.js",
     "docs": "typedoc"
   },
   "keywords": [],

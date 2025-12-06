@@ -1,0 +1,30 @@
+{
+  "name": "viewcall-voice-server",
+  "version": "1.0.0",
+  "description": "Voice transmission server for ViewCall using WebRTC",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch api/index.ts",
+    "build": "tsc",
+    "start": "node dist/api/index.js",
+    "docs": "typedoc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "peer": "^1.0.2",
+    "socket.io": "^4.8.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.5",
+    "@types/node": "^24.10.1",
+    "tsx": "^4.20.6",
+    "typedoc": "^0.28.14",
+    "typescript": "^5.9.3"
+  }
+}

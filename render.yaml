@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: view-back-voz
+    runtime: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 4000
+      - key: ORIGIN
+        value: https://viewcall-frontend.vercel.app,http://localhost:5173
+      - key: PEERJS_PORT
+        value: 9000
+      - key: PEERJS_PATH
+        value: /peerjs
